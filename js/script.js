@@ -112,3 +112,12 @@ totale di voti superiore a 70 e id superiore a 120
 
 const studentsOver70Id120= students.filter(students => students.grades > 70 && students.id > 120 );
 console.log("Gli studenti con grado superiore a 70 ed ID maggiore di 120 sono:", studentsOver70Id120);
+
+/*
+3. Dobbiamo stampare le targhe col nome degli studenti:
+- creare una lista contenente il loro nome tutto in maiuscolo 
+ES (Marco della Rovere => MARCO DELLA ROVERE);
+*/
+
+const namesInUppercase = students.map(students => students.name.toUpperCase());
+console.log(namesInUppercase);
