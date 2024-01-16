@@ -96,11 +96,19 @@ const students = [
     { id: 102, name: 'Piero della Francesca', grades: 50 },
     { id: 120, name: 'Francesca da Polenta', grades: 84 }
 ];
-
+console.log(students);
 /*
  1. Dobbiamo creare una lista di tutti gli studenti che hanno un 
  totale di voti superiore a 70
 */
 
-const studentsOver70 = students.filter(student => student.grades > 70);
+const studentsOver70 = students.filter(students => students.grades > 70);
 console.log("Gli studenti con grado superiore a 70 sono :", studentsOver70);
+
+/*
+ 2. Dobbiamo creare una lista di tutti gli studenti che hanno un 
+totale di voti superiore a 70 e id superiore a 120
+*/
+
+const studentsOver70Id120= students.filter(students => students.grades > 70 && students.id > 120 );
+console.log("Gli studenti con grado superiore a 70 ed ID maggiore di 120 sono:", studentsOver70Id120);
