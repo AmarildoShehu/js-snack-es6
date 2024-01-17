@@ -194,16 +194,32 @@ solo nomi e falli subiti e stampiamo tutto in console.
 
 */
 
+// Dichiarazione aaray
 const footballTeams = [
-  { nome: 'Juventus', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Milan', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Inter', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Liverpool', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Ajax', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Real Madrid', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Barcelona', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'PSG', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Bayer Munchen', puntiFatti: 0, falliSubiti: 0 },
-  { nome: 'Manchster City', puntiFatti: 0, falliSubiti: 0 },
-  // Aggiungi altre squadre se necessario
+  { name: 'Juventus', points: 0,  foulDrawn: 0 },
+  { name: 'Milan', points: 0, foulDrawn: 0 },
+  { name: 'Inter', points: 0, foulDrawn: 0 },
+  { name: 'Liverpool', points: 0, foulDrawn: 0 },
+  { name: 'Ajax', points: 0, foulDrawn: 0 },
+  { name: 'Real Madrid', points: 0, foulDrawn: 0 },
+  { name: 'Barcelona', points: 0, foulDrawn: 0 },
+  { name: 'PSG', points: 0, foulDrawn: 0 },
+  { name: 'Bayer Munchen', points: 0, foulDrawn: 0 },
+  { name: 'Manchster City', points: 0, foulDrawn: 0 },
 ];
+
+// ----- FUNZIONI ------- //
+// FUNZIONI GENERARE NUMERI RANDOM
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+for (let i = 0; i < footballTeams.length; i++) {
+  // generiamo  numeri casuali alle proprietà points e foulDrawn di OGNI squadra
+  footballTeams[i].points = randomNumber(0, 50);
+  footballTeams[i].foulDrawn = randomNumber(0, 50);
+}
+
+// Stampa array aggiornato
+console.log(footballTeams);
