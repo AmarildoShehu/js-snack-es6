@@ -139,14 +139,15 @@ const racingBikes = [
   { name: 'Colnago C64', weight: 7.3 }
 ];
 
+/*
 let weightFirstBike = racingBikes[0].weight;
 let lightestBike = racingBikes[0];
-/*
+
 // Ciclo dal primo array 
 for (let i = 1; i < racingBikes.length; i++) {
   const bike = racingBikes[i];
 
-  // Confrontiamo i pesi per trovare n peso minore
+  // Confronto i pesi per trovare n peso minore
   if (bike.weight < weightFirstBike) {
     weightFirstBike = bike.weight;
     lightestBike = bike;
@@ -155,6 +156,20 @@ for (let i = 1; i < racingBikes.length; i++) {
 */
 
 // # DESTRUCTURING
+
+let [firstBike, ...restBikes] = racingBikes;
+let { weight: lightestWeight, ...restLightestBike } = firstBike;
+
+for (const { weight, ...restBike } of restBikes) {
+  // Confronto i pesi per trovare il peso minore
+  if (weight < lightestWeight) {
+    lightestWeight = weight;
+    restLightestBike = restBike;
+  }
+}
+
+// Ricostuire l'oggetto lightestBike
+const lightestBike = { weight: lightestWeight, ...restLightestBike };
 
 // Stampo la bici con il peso minore
 console.log("La bici con peso minore é:", lightestBike);
