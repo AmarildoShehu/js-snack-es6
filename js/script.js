@@ -132,26 +132,29 @@ Stampare in console la bici con peso minore utilizzando il destructuring.
 
 // Array bici da corsa
 const racingBikes = [
-  { name: 'Bianchi Oltre XR4', peso: 7.2 },
-  { name: 'Specialized Tarmac SL7', peso: 6.8 },
-  { name: 'Trek Madone SLR', peso: 7.1 },
-  { name: 'Cervelo R5', peso: 6.7 },
-  { name: 'Colnago C64', peso: 7.3 }
+  { name: 'Bianchi Oltre XR4', weight: 7.2 },
+  { name: 'Specialized Tarmac SL7', weight: 6.8 },
+  { name: 'Trek Madone SLR', weight: 7.1 },
+  { name: 'Cervelo R5', weight: 6.7 },
+  { name: 'Colnago C64', weight: 7.3 }
 ];
 
-let weightFirstBike = racingBikes[0].peso;
+let weightFirstBike = racingBikes[0].weight;
 let lightestBike = racingBikes[0];
-
+/*
 // Ciclo dal primo array 
 for (let i = 1; i < racingBikes.length; i++) {
   const bike = racingBikes[i];
 
   // Confrontiamo i pesi per trovare n peso minore
-  if (bike.peso < weightFirstBike) {
-    weightFirstBike = bike.peso;
+  if (bike.weight < weightFirstBike) {
+    weightFirstBike = bike.weight;
     lightestBike = bike;
   }
 }
+*/
+
+// # DESTRUCTURING
 
 // Stampo la bici con il peso minore
 console.log("La bici con peso minore é:", lightestBike);
