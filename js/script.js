@@ -173,3 +173,37 @@ const lightestBike = { weight: lightestWeight, ...restLightestBike };
 
 // Stampo la bici con il peso minore
 console.log("La bici con peso minore é:", lightestBike);
+
+/*
+
+## SNACK 4
+
+Creare un array di oggetti di squadre di calcio.
+
+Ogni squadra avrà diverse proprietà: 
+- nome
+- punti fatti
+- falli subiti.
+
+nome sarà l’unica proprietà da inventare voi, le altre saranno tutte settate a 0.
+
+Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
+
+Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono 
+solo nomi e falli subiti e stampiamo tutto in console.
+
+*/
+
+const footballTeams = [
+  { nome: 'Juventus', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Milan', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Inter', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Liverpool', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Ajax', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Real Madrid', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Barcelona', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'PSG', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Bayer Munchen', puntiFatti: 0, falliSubiti: 0 },
+  { nome: 'Manchster City', puntiFatti: 0, falliSubiti: 0 },
+  // Aggiungi altre squadre se necessario
+];
