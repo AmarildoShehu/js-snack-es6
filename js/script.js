@@ -121,3 +121,21 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 
 const namesInUppercase = students.map(students => students.name.toUpperCase());
 console.log(namesInUppercase);
+
+
+/* ## SNACK 3
+Creare un array di oggetti:
+  - Ogni oggetto descriverà una bici da corsa con le seguenti proprietà:
+  - name e peso.
+Stampare in console la bici con peso minore utilizzando il destructuring.
+*/
+
+// Array bici da corsa
+const racingBikes = [
+  { name: 'Bianchi Oltre XR4', peso: 7.2 },
+  { name: 'Specialized Tarmac SL7', peso: 6.8 },
+  { name: 'Trek Madone SLR', peso: 7.1 },
+  { name: 'Cervelo R5', peso: 6.7 },
+  { name: 'Colnago C64', peso: 7.3 }
+];
+
