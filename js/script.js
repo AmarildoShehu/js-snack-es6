@@ -139,3 +139,19 @@ const racingBikes = [
   { name: 'Colnago C64', peso: 7.3 }
 ];
 
+let weightFirstBike = racingBikes[0].peso;
+let lightestBike = racingBikes[0];
+
+// Ciclo dal primo array 
+for (let i = 1; i < racingBikes.length; i++) {
+  const bike = racingBikes[i];
+
+  // Confrontiamo i pesi per trovare n peso minore
+  if (bike.peso < weightFirstBike) {
+    weightFirstBike = bike.peso;
+    lightestBike = bike;
+  }
+}
+
+// Stampo la bici con il peso minore
+console.log("La bici con peso minore é:", lightestBike);
