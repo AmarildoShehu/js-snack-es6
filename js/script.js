@@ -208,6 +208,8 @@ const footballTeams = [
   { name: 'Manchster City', points: 0, foulDrawn: 0 },
 ];
 
+
+// Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
 // ----- FUNZIONI ------- //
 // FUNZIONI GENERARE NUMERI RANDOM
 function randomNumber(min, max) {
@@ -220,6 +222,13 @@ for (let i = 0; i < footballTeams.length; i++) {
   footballTeams[i].points = randomNumber(0, 50);
   footballTeams[i].foulDrawn = randomNumber(0, 50);
 }
-
-// Stampa array aggiornato
 console.log(footballTeams);
+
+/*
+usando il destructuring, creiamo un nuovo array i cui elementi contengono 
+solo nomi e falli subiti e stampiamo tutto in console.
+ */
+// Nuovo array
+const newfootballTeams = footballTeams.map(({ name, foulDrawn }) => ({ name, foulDrawn }));
+
+console.log(newfootballTeams);
