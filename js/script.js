@@ -204,8 +204,8 @@ const footballTeams = [
   { name: 'Real Madrid', points: 0, foulDrawn: 0 },
   { name: 'Barcelona', points: 0, foulDrawn: 0 },
   { name: 'PSG', points: 0, foulDrawn: 0 },
-  { name: 'Bayer Munchen', points: 0, foulDrawn: 0 },
-  { name: 'Manchster City', points: 0, foulDrawn: 0 },
+  { name: 'Bayern Munchen', points: 0, foulDrawn: 0 },
+  { name: 'Manchester City', points: 0, foulDrawn: 0 },
 ];
 
 
